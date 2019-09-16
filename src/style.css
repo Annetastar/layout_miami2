@@ -195,9 +195,10 @@ body {
       width: 480px; }
   .consultation__main_form {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .consultation__main_form-input {
-      width: 383px;
+      width: 100%;
       height: 54px;
       background-color: #eee;
       margin-bottom: 10px;
@@ -210,7 +211,6 @@ body {
         color: #393939; }
     .consultation__main_form-button {
       box-sizing: border-box;
-      width: 383px;
       background-color: #00aaef;
       text-transform: uppercase;
       text-decoration: none;
@@ -225,7 +225,7 @@ body {
         color: #00aaef;
         border: 1px solid #00aaef; }
 
-/* TESTIMONUALS SECTION */
+/* TESTIMONIALS SECTION */
 .testimonials {
   position: relative;
   background-color: #eee;
@@ -478,10 +478,21 @@ body {
     width: 100%; } }
 @media (max-width: 350px) {
   .consultation__title {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-top: 50px; }
+
+  .consultation__bottom-underline {
+    width: 70%;
+    margin: 0 auto; }
 
   .testimonials__title {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0; }
+
+  .testimonials__bottom-underline {
+    width: 70%;
+    margin: 0 auto; }
 
   .contacts__main_form-button {
     font-size: 10px; } }

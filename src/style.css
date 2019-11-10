@@ -125,7 +125,8 @@ body {
       padding: 15px 60px;
       font-weight: 500;
       font-size: 14px;
-      margin: auto; }
+      margin: auto;
+      border: 1px solid transparent; }
       .gallery__main_button:hover {
         background-color: white;
         color: #00aaef;
@@ -133,11 +134,6 @@ body {
 
 .bottom-underline_picture {
   height: 16px; }
-
-.picture_1,
-.picture_3,
-.picture_5 {
-  margin-right: 16px; }
 
 .about_picture {
   margin: 12px 0 35px 0; }
@@ -219,13 +215,14 @@ body {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .consultation__main_form-button:hover {
         background-color: white;
         color: #00aaef;
         border: 1px solid #00aaef; }
 
-/* TESTIMONIALS SECTION */
+/* TESTIMONUALS SECTION */
 .testimonials {
   position: relative;
   background-color: #eee;
@@ -303,6 +300,9 @@ body {
       font-weight: normal;
       font-size: 24px;
       line-height: 36px; }
+      .contacts__main-left .address {
+        text-decoration: none;
+        color: black; }
     .contacts__main-right {
       display: flex;
       flex-direction: column; }
@@ -341,7 +341,8 @@ body {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .contacts__main_form-button:hover {
         background-color: white;
         color: #00aaef;
@@ -407,6 +408,8 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center; }
+    .consultation__main_form-input {
+      width: 100%; }
 
   .consultation__main_first-box {
     text-align: center;
@@ -427,11 +430,13 @@ body {
     .contacts__main-left {
       margin-bottom: 50px; } }
 @media (max-width: 699px) {
-  .info__header {
-    text-align: center; }
-  .info__text {
-    width: 80%;
-    text-align: center; }
+  .info {
+    padding: 20px; }
+    .info__header {
+      text-align: center; }
+    .info__text {
+      width: 80%;
+      text-align: center; }
 
   .gallery__main_first-box {
     display: flex;
@@ -477,24 +482,29 @@ body {
   label {
     width: 100%; } }
 @media (max-width: 350px) {
+  .section .info {
+    padding: 15px; }
+    .section .info__header {
+      font-size: 30px; }
+
+  .consultation__main {
+    padding-top: 40px;
+    padding-bottom: 40px; }
   .consultation__title {
     font-size: 30px;
     margin-top: 50px; }
-
   .consultation__bottom-underline {
     width: 70%;
     margin: 0 auto; }
 
   .testimonials__title {
     font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 0; }
-
+    margin-top: 50px; }
   .testimonials__bottom-underline {
     width: 70%;
     margin: 0 auto; }
 
-  .contacts__main_form-button {
-    font-size: 10px; } }
+  .contacts {
+    padding-top: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
